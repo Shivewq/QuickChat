@@ -2,7 +2,7 @@
 
 :root {
 	--dark-color-a: #2c2c2c77;
-	--dark-color-b: #000000;
+	--black: #000000;
 	--light-color: #a1a1a18c;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
@@ -17,9 +17,11 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	background: var(--dark-color-b);
+	background: var(--black);
 	margin: 20px;
 }
+
+
 
 ul {
 	list-style: none;
@@ -32,7 +34,7 @@ a {
 .btn {
 	cursor: pointer;
 	padding: 5px 15px;
-	background: var(--dark-color-b);
+	background: var(--black);
 	color: #fff;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
@@ -46,7 +48,7 @@ a {
 
 .chat-container {
 	max-width: 1100px;
-	background: var(--dark-color-b);
+	background: var(--black);
 	margin: 30px auto;
 	overflow: hidden;
 }
@@ -147,14 +149,14 @@ a {
 .join-header {
 	text-align: center;
 	padding: 20px;
-	background: var(--dark-color-a);
+	background: var(--black);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
 
 .join-main {
 	padding: 30px 40px;
-	background: var(--dark-color-a);
+	background: var(--black);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
@@ -169,15 +171,11 @@ a {
 
 .join-main label {
 	display: block;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .join-main input[type='text'] {
-	background: var(--light-color);
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	background: var(--black);
 	font-size: 16px;
 	padding: 5px;
 	height: 40px;
@@ -185,12 +183,8 @@ a {
 }
 
 .join-main select {
-	background: var(--light-color);
-	color: rgb(255, 255, 255);
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	background: var(--black);
+	color: #fff;
 	font-size: 16px;
 	padding: 5px;
 	height: 40px;
@@ -198,8 +192,8 @@ a {
 }
 
 .join-main .btn {
-	background: var(--light-color);
-	color: rgb(255, 255, 255);
+	background: var(--black);
+	color: #fff;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	border-top-left-radius: 5px;

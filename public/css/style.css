@@ -54,7 +54,7 @@ a {
 }
 
 .chat-header {
-	background: var(--light-color);
+	background: var(--black);
 	color: #fff;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
@@ -70,7 +70,7 @@ a {
 }
 
 .chat-sidebar {
-	background: var(--dark-color-a);
+	background: var(--black);
 	color: #fff;
 	padding: 20px 20px 60px;
 	overflow-y: scroll;
@@ -100,7 +100,8 @@ a {
 .chat-messages .message {
 	padding: 10px;
 	margin-bottom: 15px;
-	background-color: var(--light-color);
+	background-color: var(--black);
+	color: #fff;
 	border-radius: 5px;
 }
 
@@ -176,6 +177,7 @@ a {
 
 .join-main input[type='text'] {
 	background: var(--black);
+	color: white;
 	font-size: 16px;
 	padding: 5px;
 	height: 40px;

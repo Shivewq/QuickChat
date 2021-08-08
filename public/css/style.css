@@ -36,10 +36,6 @@ a {
 	padding: 5px 15px;
 	background: var(--black);
 	color: #fff;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
 	border: 0;
 	font-size: 17px;
 }

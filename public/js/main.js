@@ -64,3 +64,12 @@ function outputUsers(users) {
         ${users.map(user => `<li>${user.username}</li>`).join('')}
     `;
 }
+
+document.getElementById('leave-btn').addEventListener('click', () => {
+    const leaveRoom = confirm('Are you sure you would like to leave the chatroom?');
+    if (leaveRoom) {
+        window.location = '../index.html'
+    } else {
+        
+    }
+})

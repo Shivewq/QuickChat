@@ -16,9 +16,12 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 	font-size: 16px;
 	background: var(--black);
-	margin: 20px;
 }
 
 
@@ -138,17 +141,22 @@ a {
 /* Join Page */
 
 .join-container {
-	max-width: 500px;
-	margin: 100px auto;
-	color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 40px;
+	color: #fff;
+	background: #000000;
+	border-radius: 10px;
+	box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
+    0 1px 1px rgba(128, 128, 128, 0.155),
+    0 2.1px 2.1px rgba(128, 128, 128, 0.195),
+    0 4.4px 4.4px rgba(128, 128, 128, 0.241),
+    0 12px 12px rgba(128, 128, 128, 0.35);;
 }
 
 .join-header {
-	text-align: center;
-	padding: 20px;
-	background: var(--black);
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	margin: 0 0 24px 0;
 }
 
 .join-main {

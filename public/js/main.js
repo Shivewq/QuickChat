@@ -43,7 +43,7 @@ chatForm.addEventListener('submit', (e) => { // event parameter
 });
 
 // Output message to DOM
-function outputMessage(message) {
+const outputMessage = (message) => {
     const div = document.createElement('div');
     div.classList.add('message');
     div.innerHTML = `<p class="meta">${message.username}<span>${message.time}</span></p>
@@ -54,18 +54,20 @@ function outputMessage(message) {
 }
 
 // add room names to DOM
-function outputRoomName(room) {
+const outputRoomName = (room) => {
     roomName.innerText = room;
 }
 
 // Add users to DOM
-function outputUsers(users) {
+const outputUsers = (users) => {
     userList.innerHTML = `
         ${users.map(user => `<li>${user.username}</li>`).join('')}
     `;
 }
 
-document.getElementById('leave-btn').addEventListener('click', () => {
+document.getElementById('leave-btn').addEventListener('click', (event) => {
+    event.preventDefault();
+
     const leaveRoom = confirm('Are you sure you would like to leave the chatroom?');
     if (leaveRoom) {
         window.location = '../index.html'

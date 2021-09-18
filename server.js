@@ -50,7 +50,7 @@ io.on('connection', socket => {
     socket.on('disconnect', () => {
         const user = userLeave(socket.id);
 
-        if(user) {
+        if (user) {
             io.to(user.room).emit(
                 'message', 
                 formatMessage(botName, `${user.username} has left the chat.`)
@@ -66,4 +66,4 @@ io.on('connection', socket => {
 });
 const PORT = process.env.PORT || 3000;
 
-server.listen(PORT, () => console.log(`Server runs on port ${PORT}`));
+server.listen(PORT, () => console.log(`Server runs on port ${PORT}`)); 
